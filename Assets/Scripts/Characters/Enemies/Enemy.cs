@@ -21,6 +21,7 @@ public class Enemy : Characters
 	float radians;
 	float rotateZ;
 	float testAngleZ;
+	float turnSmoothing = 2f;
 
 	public bool pas;
 	public bool sus;
@@ -86,7 +87,9 @@ public class Enemy : Characters
 			s += threesixty;
 		}
 
-		Debug.Log (s + " --- " + v + " - " + s1Angle + " & " + s2Angle);
+		if (sus == true) {
+			RotateTowards (player);	
+		}
 
 		if (s >= v + (-s1Angle / 2) && s <= v + (s1Angle / 2)) {
 			Debug.DrawRay (origin, direction, Color.blue);
@@ -167,5 +170,19 @@ public class Enemy : Characters
 		h2Timer = timerReset;
 		s2Timer = timerReset;
 		smTimer = timerReset;
+	}
+
+	void RotateTowards(GameObject position)
+	{
+		{
+			dirX = player.transform.position.x - transform.position.x;
+			dirY = player.transform.position.y - transform.position.y;
+			radians = Mathf.Atan2(dirY, dirX);
+			testAngleZ = radians * 180 / Mathf.PI;
+			rotateZ = Mathf.LerpAngle (transform.rotation.z, testAngleZ, turnSmoothing * Time.deltaTime);
+			Vector3 facingPlayer = new Vector3 (this.transform.rotation.x, this.transform.rotation.y, rotateZ);
+
+			this.transform.eulerAngles = facingPlayer;
+		}
 	}
 }

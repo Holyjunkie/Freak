@@ -55,7 +55,7 @@ public class PlayerControl : MonoBehaviour
 			0
 		);
 		
-		torso.transform.rotation = Quaternion.Euler (0, 0, (Mathf.Atan2 (mouseWorldPosition.y, mouseWorldPosition.x) * 180 / Mathf.PI) - 90);
+		torso.transform.rotation = Quaternion.Euler (0, 0, (Mathf.Atan2 (mouseWorldPosition.y, mouseWorldPosition.x) * 180 / Mathf.PI) + 90);
 
 		if (xVelocity != 0 | yVelocity != 0)
 		{

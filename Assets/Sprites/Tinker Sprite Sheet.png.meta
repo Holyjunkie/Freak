@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: b5dd4c37ab58f4bbc955628d456b8e13
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tinker Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4822
+        width: 800
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 4822
+        width: 801
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 4718
+        width: 801
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 4718
+        width: 795
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 3873
+        width: 1108
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 3642
+        width: 1086
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 3867
+        width: 1465
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 3292
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2544
+        width: 1087
+        height: 1026
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1348
+        width: 1086
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1227
+        width: 1092
+        height: 1004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 475
+        width: 332
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 475
+        width: 329
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 475
+        width: 356
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 475
+        width: 356
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tinker Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 2907
+        width: 1101
+        height: 966
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
