@@ -21,7 +21,7 @@ public class Enemy : Characters
 	float radians;
 	float rotateZ;
 	float testAngleZ;
-	float turnSmoothing = 2f;
+	float turnSmoothing = 5f;
 
 	public bool pas;
 	public bool sus;
@@ -179,10 +179,10 @@ public class Enemy : Characters
 			dirY = player.transform.position.y - transform.position.y;
 			radians = Mathf.Atan2(dirY, dirX);
 			testAngleZ = radians * 180 / Mathf.PI;
-			rotateZ = Mathf.LerpAngle (transform.rotation.z, testAngleZ, turnSmoothing * Time.deltaTime);
+			rotateZ = Mathf.LerpAngle (transform.rotation.z, testAngleZ, turnSmoothing * Time.time);
 			Vector3 facingPlayer = new Vector3 (this.transform.rotation.x, this.transform.rotation.y, rotateZ);
 
-			this.transform.eulerAngles = facingPlayer;
+			transform.eulerAngles = facingPlayer;
 		}
 	}
 }
