@@ -110,6 +110,8 @@ public partial class RageSvgIn : MonoBehaviour {
 	/// <summary> Overload used by the editor "Import" button, applies the editor-assigned path </summary>
 	public void ImportFile() {
         if (FileObject == null && UrlPath == "") return;
+        //4.5 fix
+        CreatedgOs = new List<GameObject>();
         bool isSvg = false;
         string folderPath = "", filePath = "";
 #if UNITY_EDITOR && !UNITY_WEBPLAYER
