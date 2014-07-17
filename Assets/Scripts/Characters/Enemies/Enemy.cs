@@ -27,6 +27,14 @@ public class Enemy : Characters
 	public bool sus;
 	public bool ale;
 
+	float susTimer;
+	float susReset = 0f;
+	float susTop = 600f;
+
+	float aleTimer;
+	float aleReset = 0f;
+	float aleTop = 600f;
+
 	public float speed = 2f;
 
 	private PlayerControl playerCon;
@@ -53,6 +61,28 @@ public class Enemy : Characters
 			}
 		}
 		//if(other.gameObject == noise) { }then set navmesh target to the position of the noise-maker.
+	}
+
+	void Update()
+	{
+		if (ale == true) {
+			aleTimer = aleTop;
+		}
+		if (sus == true) {
+			susTimer = susTop;
+		}
+		if (ale == true && sus == true && playerInSight != true) {
+			aleTimer --;
+			if(aleTimer == aleReset){
+				ale = false;
+				aleTimer = aleReset;
+				susTimer --;
+				if(susTimer == susReset){
+					sus = false;
+					susTimer = susReset;
+				}
+			}
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
@@ -96,7 +126,6 @@ public class Enemy : Characters
 			RaycastHit2D hit = Physics2D.Raycast (origin, direction, col.radius, combinedMask);
 			Debug.Log (hit.collider.gameObject);
 			if (hit.collider != null && hit.collider.gameObject == player) {
-				Debug.Log ("hit player");
 				if (playerCov.coverTotal <= 2) {
 					playerInSight = true;
 					sus = true;
