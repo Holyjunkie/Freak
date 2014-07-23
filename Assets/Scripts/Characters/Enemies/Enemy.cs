@@ -29,11 +29,11 @@ public class Enemy : Characters
 
 	float susTimer;
 	float susReset = 0f;
-	float susTop = 600f;
+	float susTop = 30f;
 
 	float aleTimer;
 	float aleReset = 0f;
-	float aleTop = 600f;
+	float aleTop = 30f;
 
 	public float speed = 2f;
 
@@ -71,12 +71,18 @@ public class Enemy : Characters
 		if (sus == true) {
 			susTimer = susTop;
 		}
+		if (ale == true && sus == true && playerInSight == true) {
+			susTimer = susTop;
+			aleTimer = aleTop;
+		}
 		if (ale == true && sus == true && playerInSight != true) {
-			aleTimer --;
-			if(aleTimer == aleReset){
+			aleTimer = aleTimer -= 1 * Time.time;
+			Debug.Log (aleTimer);
+			if(aleTimer <= aleReset){
 				ale = false;
 				aleTimer = aleReset;
-				susTimer --;
+				susTimer = susTimer -= 1 * Time.time;
+				Debug.Log (susTimer);
 				if(susTimer == susReset){
 					sus = false;
 					susTimer = susReset;
