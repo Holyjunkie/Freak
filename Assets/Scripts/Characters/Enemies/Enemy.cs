@@ -28,12 +28,7 @@ public class Enemy : Characters
 	public bool ale;
 
 	float susTimer;
-	float susReset = 0f;
-	float susTop = 30f;
-
 	float aleTimer;
-	float aleReset = 0f;
-	float aleTop = 30f;
 
 	public float speed = 2f;
 
@@ -66,26 +61,26 @@ public class Enemy : Characters
 	void Update()
 	{
 		if (ale == true) {
-			aleTimer = aleTop;
+			aleTimer = 30;
 		}
 		if (sus == true) {
-			susTimer = susTop;
+			susTimer = 30;
 		}
 		if (ale == true && sus == true && playerInSight == true) {
-			susTimer = susTop;
-			aleTimer = aleTop;
+			susTimer = 30;
+			aleTimer = 30;
 		}
 		if (ale == true && sus == true && playerInSight != true) {
-			aleTimer = aleTimer -= 1 * Time.time;
+			aleTimer -= Time.time;
 			Debug.Log (aleTimer);
-			if(aleTimer <= aleReset){
+			if(aleTimer <= 0){
 				ale = false;
-				aleTimer = aleReset;
-				susTimer = susTimer -= 1 * Time.time;
+				aleTimer = 0;
+				susTimer -= Time.time;
 				Debug.Log (susTimer);
-				if(susTimer == susReset){
+				if(susTimer <= 0){
 					sus = false;
-					susTimer = susReset;
+					susTimer = 0;
 				}
 			}
 		}

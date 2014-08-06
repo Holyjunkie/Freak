@@ -10,11 +10,11 @@ public class ZedPathTest : MonoBehaviour
 	public Transform pathingTarget;
 	private List<Vector2> path;
 
-	private Enemy enem;
+	//private Enemy enem;
 
 	void Awake()
 	{
-		enem = GetComponent<Enemy>();
+		//enem = GetComponent<Enemy>();
 	}
 
 	// LateUpdate is called once per frame
